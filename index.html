@@ -4,19 +4,26 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <form>
-            <input type="email" name"email" reuired maxlength= "20" placeholder="כתובת מייל עד 10 אותיות "/>:כתובת דוא"ל
+                <legend>:אנא מלא את הטופס</legend>
+            <label for="email"> כתובת דוא'ל<label/>
+            <input type="email" name"email" reuired maxlength= "20" placeholder="כתובת מייל עד 20 אותיות "/>
             <br>
-            <input type="password" name"password" reuired maxlength="10" placeholder="סיסמא"/>סיסמה: 
+            <label for="password"> סיסמה<label/>
+            <input type="password" name"password" reuired maxlength="10" placeholder="סיסמא"/> 
       <br>
-      <input type="password" name"check-password" reuired maxlength="10" placeholder= "כתוב את הסיסמה שנית"/>סיסמה
+      <label for="check-password"> סיסמה בשנית<label/>
+      <input type="password" name"check-password" reuired maxlength="10" placeholder= "כתוב את הסיסמה שנית"/>
       <br>
-<h3>כל בכבוד שלב ב</h3>>
-<input type="number" name="age" min="1" max="120">גיל
+<h3>כל בכבוד שלב ב</h3>
+<be>
+<label for="age">גיל<label/>
+<input type="number" id"age" name="age" min="1" max="120">
 <br>
+<label for="status">סטאטוס<label/>
 <input type="radio" name="status" id="batchler" value="רווק "checked>
 <label for="batchler">רווק<label/>
 <input type="radio" name="status" id="married" value="נשוי">
@@ -34,9 +41,14 @@
 <br>
 <H3>אתה פטיש אתה בשלב ג</H3>
 <br>
-<P>העלה תמונה</P>
-<input type="file" multiple>
-
+<label for="picture">העלה תמונה<label/>
+<input type="file" id="picture" multiple>
+<br>
+<label for="comments">ספר בקצרה על עצמך<label/><br>
+<textarea id="comments" rows="10" cols="50"></textarea>
+<br>
+<input type="submit" name="submit">
+<input type="reset" name="reset">
 </form>
     </body>
 </html>

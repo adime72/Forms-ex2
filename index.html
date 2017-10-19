@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>תרגיל 2 בטפסים </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <h3>מי אתה?</h3>
+        
         <form>
-                <legend>:אנא מלא את הטופס</legend>
+                <legend>אנא מלא את הטופס</legend>
             <label for="email"> כתובת דוא'ל<label/>
             <input type="email" name"email" reuired maxlength= "20" placeholder="כתובת מייל עד 20 אותיות "/>
             <br>
-            <label for="password"> סיסמה<label/>
+            <label for="password">סיסמה<label/>
             <input type="password" name"password" reuired maxlength="10" placeholder="סיסמא"/> 
       <br>
       <label for="check-password"> סיסמה בשנית<label/>
       <input type="password" name"check-password" reuired maxlength="10" placeholder= "כתוב את הסיסמה שנית"/>
       <br>
+      <!-- בחלק זה נממש את שלב ב של התוכנית 
+        תוספת של שדה מספר, רדיו ובחירה מרובה -->
 <h3>כל בכבוד שלב ב</h3>
 <be>
 <label for="age">גיל<label/>
 <input type="number" id"age" name="age" min="1" max="120">
 <br>
 <label for="status">סטאטוס<label/>
-<input type="radio" name="status" id="batchler" value="רווק "checked>
-<label for="batchler">רווק<label/>
+<input type="radio" name="status" id="single" value="רווק "checked>
+<label for="single">רווק<label/>
 <input type="radio" name="status" id="married" value="נשוי">
 <label for="married">נשוי<label/>
+<input type="radio" name="status" id="divorce" value="גרוש באושר">
+    <label for="divorce">גרוש באושר<label/>
 <br>
 <p>בחר אילו תחביבים אתה אוהב</p>
-    <select multiple>
+    <select multiple >
         <option>צלילה</option>
         <option>סנפלינג</option>
         <option>רפטינג</option>
@@ -43,7 +49,8 @@
 <br>
 <label for="picture">העלה תמונה<label/>
 <input type="file" id="picture" multiple>
-<br>
+<br><br>
+
 <label for="comments">ספר בקצרה על עצמך<label/><br>
 <textarea id="comments" rows="10" cols="50"></textarea>
 <br>
